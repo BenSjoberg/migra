@@ -85,6 +85,8 @@ class Migration(object):
         self.add(self.changes.pk_constraints(creations_only=True))
         self.add(self.changes.non_pk_constraints(creations_only=True))
         self.add(self.changes.schemas(drops_only=True))
+        self.add(self.changes.triggers(drops_only=True))
+        self.add(self.changes.triggers(creations_only=True))
 
     @property
     def sql(self):

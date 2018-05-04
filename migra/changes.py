@@ -14,6 +14,7 @@ THINGS = [
     'views',
     'indexes',
     'extensions',
+    'triggers'
 ]
 PK = 'PRIMARY KEY'
 
